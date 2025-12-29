@@ -1,0 +1,71 @@
+<% layout("./layouts/boilerplate") -%>
+<br><br>
+<div class="row">
+    <div class="col-8  offset-2">
+    <h2>Create New Listing</h2>
+    <form method="post" action="/listings" class=" needs-validation" novalidate enctype="multipart/form-data">       
+
+    <div class="mb-3" >
+        <label for="title" class="form-label">Title</label>
+        <input class="form-control" type="text" name="listing[title]" placeholder="Add a Cuchy title"  required > 
+        <div class="invalid-feedback">
+            Please provide a valid Title.
+          </div>
+
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input class="form-control" type="text" name="listing[description]" placeholder="Enter description" required >
+        <div class="invalid-feedback">
+            Please provide a short Description.
+          </div>
+    </div>
+    <!-- ef3b295338a04d3b8586c71bcfdf4748_c97e4f227b08f8db37b05952added68c60870f4130338f0727a7e9c5b50aa60c -->
+
+    <div class="mb-3">
+        <label for="image" class="form-label">Upload Image</label>
+        <input class="form-control" type="file" name="listing[image]" required >
+    </div>
+
+
+<div class="row ">
+    <div class="mb-3 col-md-4"> 
+        <label for="price" class="form-label">Price</label>
+        <input class="form-control"  name="listing[price]" placeholder="1500"  required >
+        <div class="invalid-feedback">
+            Please provide a valid Price.
+          </div>
+    </div>
+
+    <div class="mb-3 col-md-8">
+        <label for="location" class="form-label">Location</label>
+        <input class="form-control"  type="text" name="listing[location]" placeholder="Kanpur" required > 
+        <div class="invalid-feedback">
+            Please provide a valid Location.
+          </div>
+    </div>
+   
+   
+</div>
+    
+    <div class="mb-3">   
+        <label for="country" class="form-label">Country</label>
+       <input class="form-control" type="text" name="listing[country]" placeholder="India"  required >
+       <div class="invalid-feedback">
+        Please provide a valid Country.
+      </div>
+    </div>
+    <br>
+
+<button class="btn btn-dark add-btn">Add </button>
+<br>
+<br>
+<br>
+<br>
+</form>
+</div>
+</div>
+   
+
+</body>
